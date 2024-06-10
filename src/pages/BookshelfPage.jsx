@@ -1,5 +1,5 @@
 // src/pages/BookshelfPage.jsx
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Bookshelf from "../components/Bookshelf";
 
@@ -22,9 +22,7 @@ const Button = styled.button`
 `;
 
 const BookshelfPage = () => {
-  const [bookshelf, setBookshelf] = useState(() => {
-    return JSON.parse(localStorage.getItem("bookshelf")) || [];
-  });
+  const bookshelf = JSON.parse(localStorage.getItem("bookshelf")) || [];
 
   return (
     <Container>
