@@ -1,0 +1,19 @@
+/* src/styles.css */
+.book-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 8px;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.results, .bookshelf {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
